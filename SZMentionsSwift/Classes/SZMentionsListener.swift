@@ -148,6 +148,13 @@ public class SZMentionsListener: NSObject {
         resetEmpty(mentionsTextView)
         mentionsTextView.delegate = self
     }
+    
+    /// textView 문자열 초기화
+    ///
+    /// - Parameter textView: textView
+    open func resetEmptyText(_ textView: UITextView) {
+        self.resetEmpty(textView)
+    }
 }
 
 // MARK: Public methods
